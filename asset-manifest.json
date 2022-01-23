@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/scalian-test/static/css/main.e6c13ad2.css",
-    "main.js": "/scalian-test/static/js/main.2f7bcf34.js",
+    "main.js": "/scalian-test/static/js/main.9727ec54.js",
     "index.html": "/scalian-test/index.html",
     "main.e6c13ad2.css.map": "/scalian-test/static/css/main.e6c13ad2.css.map",
-    "main.2f7bcf34.js.map": "/scalian-test/static/js/main.2f7bcf34.js.map"
+    "main.9727ec54.js.map": "/scalian-test/static/js/main.9727ec54.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.2f7bcf34.js"
+    "static/js/main.9727ec54.js"
   ]
 }
