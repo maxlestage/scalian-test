@@ -2,9 +2,6 @@ import { useState } from "react";
 
 let textId = 0;
 
-// <li style={{ textDecoration: "line-trough" }}>item 0</li>
-//     <li style={{ textDecoration: "none" }}>item 1</li>
-
 function Todo() {
   const [myText, setMyText] = useState("");
   const [savedTexts, setSavedTexts] = useState([]);
@@ -34,20 +31,13 @@ function Todo() {
                 : { textDecoration: "line-through" }
             }
             onClick={() => {
-              console.log("Premier", [...savedTexts]);
-
-              setSavedTexts(
-                [
-                  ...savedTexts.slice(0, index),
-                  txt.todo === false
-                    ? { id: txt.id, text: txt.text, todo: true }
-                    : { id: txt.id, text: txt.text, todo: false },
-                  ...savedTexts.slice(index + 1),
-                ]
-
-                // savedTexts.push({ id: text.id, text: text.text, todo: true }),
-                // ...savedTexts,
-              );
+              setSavedTexts([
+                ...savedTexts.slice(0, index),
+                txt.todo === false
+                  ? { id: txt.id, text: txt.text, todo: true }
+                  : { id: txt.id, text: txt.text, todo: false },
+                ...savedTexts.slice(index + 1),
+              ]);
             }}
           >
             {txt.text}
